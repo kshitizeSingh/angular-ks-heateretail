@@ -1,0 +1,77 @@
+.message{
+    font-size: 18px;
+    text-align: justify;
+}
+.error-message {
+    /* color: red; */
+    /* background-color: rgba(red, 0,0, .5); */
+    color: #A30000;
+    font-size: 18px;
+    font-weight: bold;
+    position: absolute;
+    margin-left:100%;
+    margin-top: -3%;
+    padding: 5%;
+    padding-top:5%; 
+    width: 150%;
+    font-size: 18px;
+}
+
+.Container{
+    padding-left: 4%;
+    padding-right: 4%;
+}
+
+input{
+    width: 100%;
+    background-color:rgba(0,0,0,0);
+    border: 1px solid white;
+    padding: 2%;
+    margin-bottom:4%; 
+}
+input::placeholder{
+    color: white;
+    padding: 2%;
+    font-size: 18px;
+}
+input:invalid{
+    border: 1px solid red;
+}
+
+/* input::value{
+    color: white;
+    padding: 2%;
+    font-size: 18px;
+} */
+.updatedMessage{
+    position: absolute;
+    margin-left:100%;
+  
+    text-align: center;
+    padding: 5%;
+    padding-top:5%; 
+    background-color:rgba(0,0,0,.5);
+    /* border: 1px solid black; */
+    width: 150%;
+    font-size: 18px;
+    color: white;
+}
+.updatebutton{
+    width: 100%;
+    background-color:white;
+    color: black;
+    text-align: center;
+    padding: 2%;
+    font-size: 18px;
+    border: none;
+    transition: .2s;
+}
+.updatebutton:hover{
+    background-color: silver;
+}
+
+h4{
+    text-align: center;
+    padding-bottom: 4%;
+    padding-top: 4%;
+}

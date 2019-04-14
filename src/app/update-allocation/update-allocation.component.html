@@ -1,0 +1,17 @@
+<div class="Container">
+    <h4>Update Distributor</h4>
+    <!--  -->
+    
+      <!--  -->
+      <div  class="updatedMessage" *ngIf="result!=null">
+        updated successfully
+        <span class="text text-success">{{result}}</span>
+    </div>
+    <input [(ngModel)]="allocationId" type="text" placeholder="Solar Heater Id">
+    <input [(ngModel)]="distributorName" type="text" placeholder="New Distributor Name">
+    <div  class="error-message" *ngIf="errorMessage!=null">
+        <span class="" >ERROR !!!!!{{errorMessage}}</span>
+    </div>
+    <button type="submit" class="updatebutton" (click)="updateAllocation()">Update</button>
+
+</div>

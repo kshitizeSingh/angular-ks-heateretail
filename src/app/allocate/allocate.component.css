@@ -1,0 +1,152 @@
+.message{
+    font-size: 18px;
+    text-align: justify;
+}
+
+.error-message {
+    /* color: red; */
+    color: #A30000;
+    font-size: 18px;
+    font-weight: bold;
+}
+.allocate-error-message {
+    /* color: red; */
+    /* background-color: rgba(red, 0,0, .5); */
+    color: #A30000;
+    font-size: 18px;
+    font-weight: bold;
+    position: absolute;
+    margin-left:100%;
+    margin-top: -3%;
+    padding: 5%;
+    padding-top:5%; 
+    width: 150%;
+    font-size: 18px;
+}
+.success-message{
+    color: white;
+}
+
+.formContainer{
+    padding-left: 4%;
+    padding-right: 4%;
+}
+
+input{
+    width: 100%;
+    background-color:rgba(0,0,0,0);
+    border: 1px solid white;
+    padding: 2%;
+}
+input::placeholder{
+    color: white;
+    padding: 2%;
+    font-size: 18px;
+}
+input-error{
+    border: 1px solid red;
+}
+
+/* input::value{
+    color: white;
+    padding: 2%;
+    font-size: 18px;
+} */
+.allocatebutton{
+    width: 100%;
+    background-color:white;
+    color: black;
+    text-align: center;
+    padding: 2%;
+    font-size: 18px;
+    border: none;
+    transition: .2s;
+}
+
+.allocatebutton:disabled{
+    /* border: 1px solid red; */
+    cursor: no-drop;
+}
+.allocatebutton:hover{
+    background-color: #ddd
+}
+h4{
+    text-align: center;
+    padding-bottom: 4%;
+    padding-top: 4%;
+}
+.Messageshow{
+    position: absolute;
+    margin-left:96%;
+    padding: 5%;
+    padding-top:1%; 
+    /* background-color:rgba(0,0,0,.5); */
+    /* border: 1px solid black; */
+    width: 150%;
+    font-size: 18px;
+}
+.allocatedMessage{
+    position: absolute;
+    margin-left:100%;
+    margin-top: 30%;
+    text-align: center;
+    padding: 5%;
+    padding-top:5%; 
+    background-color:rgba(0,0,0,.5);
+    /* border: 1px solid black; */
+    width: 150%;
+    font-size: 18px;
+    color: white;
+}
+.allocatedMessage{
+    position: absolute;
+    margin-left:100%;
+    margin-top: 30%;
+    text-align: center;
+    padding: 5%;
+    padding-top:5%; 
+    background-color:rgba(0,0,0,.5);
+    /* border: 1px solid black; */
+    width: 150%;
+    font-size: 18px;
+    color: white;
+}
+
+
+/* ___________________for dropdown__________________________ */
+/* .dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+ */

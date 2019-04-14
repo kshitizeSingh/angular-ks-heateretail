@@ -1,0 +1,23 @@
+<!-- <hello name="{{ name }}"></hello>
+<p>
+  Start editing to see some magic happen :)
+</p>
+<button (onClick)="click()">click</button>
+<input type="radio" name="radio" value="1">
+<input type="radio" name="radio" value="2" [checked]="flag">
+<input type="radio" name="radio" value="3">
+
+{{flag}} -->
+
+<div for="header" class="side">
+  <h1 class="brand">Sun Retail</h1>
+  <hr>
+  <router-outlet></router-outlet>
+</div>
+<div for="navigation" class="navigation">
+  <a [routerLink]="['/allocate']" class="navlink">Allocate Solar Heater</a>
+  <a [routerLink]="['/view']" class="navlink">View Allocation</a>
+  <a [routerLink]="['/updateAllocation']" class="navlink">Update distributor</a>
+  <a [routerLink]="['/deleteAllocation']" class="navlink">Delete allocation</a>
+    
+</div>

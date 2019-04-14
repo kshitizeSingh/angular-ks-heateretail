@@ -1,0 +1,40 @@
+/* *{
+    border: .5px solid black
+} */
+/* main{
+    display: flex
+} */
+.side{
+    margin-left: 5%; 
+    color: white;
+    background-color:rgba(0,0,0,.5);
+   /* flex:.35; */
+    width: 35%;
+    height: 100%;
+    position: absolute;
+}
+
+
+.brand{
+    font-family: Californian FB;
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+hr{
+    padding: 0% 5% 0% 5%;
+}
+.navigation{
+    padding-top: 4%; 
+    margin-left: 40%; 
+    width: 50%;
+}
+.navlink{
+    color: black;
+    font-size: 18px;
+    padding-left: 3%;
+}
+.navlink:active{
+    color: gray
+}
+

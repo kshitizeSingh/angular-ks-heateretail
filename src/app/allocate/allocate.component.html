@@ -1,0 +1,59 @@
+<section for="formContainer" class="formContainer">
+
+	<div class="allocatedMessage" *ngIf="successMessage!=null">
+		<span class="success-message">{{successMessage}}</span>
+  </div>
+  <h4>Allocate SolarHeater</h4>
+  <form [formGroup]="allocateForm" (ngSubmit)="register()" class="form">
+      
+      <div class="form-group">
+          <!-- <label for="dName">Distributor Name </label> -->
+          <div class="Messageshow" *ngIf="!allocateForm.controls.distributorName.valid && allocateForm.controls.distributorName.touched">
+                  <span class="error-message" >Enter Distribuor Name</span>
+          </div>
+          <input type="text" placeholder="Distributor Name" formControlName="distributorName" id="distributorName" [ngClass]="{'input-error':allocateForm.controls.distributorName.valid && allocateForm.controls.distributorName.touched}">
+      </div>
+      <div class="form-group">
+          <!-- <label for="pDate">Purchase Date </label> -->
+          <div class="Messageshow"  *ngIf="!allocateForm.controls.purchaseDate.valid && allocateForm.controls.purchaseDate.touched">
+              <span class="error-message">Enter Purchase Date</span><br>
+          </div>
+          <input type="text" placeholder="Purchase Date" onfocus="(this.type='date')" formControlName="purchaseDate" id="purchaseDate">
+      </div>
+      <div class="form-group">
+          <!-- <label for="iDate">Install Date </label> -->
+          <div class="Messageshow"  *ngIf="!allocateForm.controls.installationDate.valid && allocateForm.controls.installationDate.touched">
+                  <span class="error-message">Enter Installation Date</span><br>
+          </div>
+          <input type="text" placeholder="Installation Date" onfocus="(this.type='date')" formControlName="installationDate" id="installationDate">
+          
+      </div>
+      <div class="form-group">
+          <!-- <label for="custId">Customer ID </label> -->
+          <div class="Messageshow" *ngIf="!allocateForm.controls.customerId.valid && allocateForm.controls.customerId.touched">
+                  <span class="error-message" >Enter Customer Id</span><br>
+          </div>
+          <input type="number" placeholder="Customer Id"  formControlName="customerId" id="customerId">   
+      </div>
+      <!--  -->
+      <div class="allocate-error-message" *ngIf="errorMessage!=null">
+              <span class="">{{errorMessage}}</span>
+      </div>
+      <div class="form-group">
+          <button class="allocatebutton"  [disabled]="!allocateForm.valid" type="submit">Allocate</button>
+      </div>
+
+      <!-- <div for="messages">
+          <span class="error-message" *ngIf="!allocateForm.controls.distributorName.valid && allocateForm.controls.distributorName.touched">Enter Distribuor Name</span><br>
+          <span class="error-message" *ngIf="!allocateForm.controls.installationDate.valid && allocateForm.controls.installationDate.touched">Enter Installation Date</span><br>
+          <span class="error-message" *ngIf="!allocateForm.controls.purchaseDate.valid && allocateForm.controls.purchaseDate.touched">Enter Purchase Date</span><br>
+          <span class="error-message" *ngIf="!allocateForm.controls.customerId.valid && allocateForm.controls.customerId.touched">Enter Customer Id</span><br>
+          <div *ngIf="errorMessage!=null">
+                  <span class="error-message">{{errorMessage}}</span>
+          </div>
+          <div *ngIf="successMessage!=null">
+                  <span class="success-message">{{successMessage}}</span>
+          </div>
+  </div> -->
+  </form>
+</section>

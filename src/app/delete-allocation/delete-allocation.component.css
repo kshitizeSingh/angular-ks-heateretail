@@ -1,0 +1,21 @@
+.show{
+    position: absolute;
+    margin-top: -4%;
+    margin-left:100%;
+    padding: 5%;
+    padding-top:0%; 
+    background-color:rgba(0,0,0,.5);
+    /* border: 1px solid black; */
+    width: 150%;
+}
+
+.formContainer{
+    padding-left: 4%;
+    padding-right: 4%;
+}
+
+h4{
+    text-align: center;
+    padding-bottom: 4%;
+    padding-top: 4%;
+}

@@ -1,0 +1,37 @@
+.formContainer{
+    padding-left: 4%;
+    padding-right: 4%;
+}
+select{
+    width: 100%;
+    background-color:rgba(0,0,0,0);
+    border: 1px solid white;
+    padding: 2%;
+    font-size: 18px;
+}
+
+option{
+    color: #999;
+    font-size: 18px;
+    /* padding: 5%; */
+    background-color:rgba(0,0,0,0);
+    border: 1px solid white;
+}
+
+h4{
+    text-align: center;
+    padding-bottom: 4%;
+    padding-top: 4%;
+}
+
+.show{
+    position: absolute;
+    margin-top: -4%;
+    margin-left:100%;
+    padding: 5%;
+    padding-top:0%; 
+    background-color:rgba(0,0,0,.5);
+    /* border: 1px solid black; */
+    width: 150%;
+}
+

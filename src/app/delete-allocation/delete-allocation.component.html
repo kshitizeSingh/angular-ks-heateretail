@@ -1,0 +1,36 @@
+<div class="formContainer">
+  <div class="show">
+      <h4> List of Allocations </h4>
+  <table class="table table-bordered">
+      <tr>
+        <th>SolarHeater Id</th>
+        <th>Distributor Name</th>
+        <th>Purchase Date</th>
+        <th>Installation Date</th>
+        <th>Customer Id</th>
+        <!-- <th>Delete</th> -->
+      </tr>
+      <tr *ngFor="let allocate of allocationDetails">
+        <td>
+          <input  type="radio" (click)="delete(allocate.solarHeaterId)">
+          <label (click)="delete(allocate.solarHeaterId)">{{ allocate.solarHeaterId }}</label></td>
+        <td>{{ allocate.distributorName }}</td>
+        <td>{{allocate.purchaseDate}}</td>
+        <td>{{ allocate.installationDate }}</td>
+        <td>{{ allocate.customerId }}</td>
+        <!-- <td>
+          <button type="button" class="btn btn-danger" (click)="delete(allocate.solarHeaterId)">Delete</button>
+        </td> -->
+      </tr>
+
+    </table>
+  </div>
+  <br>
+  <br>
+  <br>
+
+
+  <h4><i>Click  On SolarHeater Id to delete allocation
+    </i></h4>
+  
+</div>
