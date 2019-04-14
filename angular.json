@@ -23,10 +23,8 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css",
-              "primeicons/primeicons.css",
-              "primeng/resources/themes/nova-light/theme.css",
-              "primeng/resources/primeng.min.css"
+              "src/styles.css"
+              
             ],
             "scripts": []
           },
